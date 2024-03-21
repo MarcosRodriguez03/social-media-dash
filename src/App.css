@@ -1,38 +1,64 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.interFont {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.interFontBold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.borderTopInsta {
+  position: relative;
+}
+
+.borderTopInsta::before {
+  content: '';
+  position: absolute;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  z-index: 1;
+}
+
+.borderTopFacebook {
+  border-top: solid 4px hsl(208, 92%, 53%);
+}
+
+.borderTopTwitter {
+  border-top: solid 4px hsl(203, 89%, 53%);
+}
+
+.borderTopYoutube {
+  border-top: solid 4px hsl(348, 97%, 39%);
+}
+
+
+
+
+
+.downStyle {
+  color: hsl(356, 69%, 56%);
+
+}
+
+.upStyle {
+  color: hsl(163, 72%, 41%);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.gradient {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-image: linear-gradient(to bottom right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
