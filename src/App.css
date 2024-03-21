@@ -62,3 +62,61 @@
 
   background-image: linear-gradient(to bottom right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 2.9em;
+  height: 1.5em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  border: 1px solid transparent;
+  transition: .6s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1em;
+  width: 1em;
+  border-radius: 20px;
+  left: 0.17em;
+  bottom: 0.178em;
+  background-color: hsl(230, 17%, 14%);
+  transition: .3s;
+}
+
+input:checked+.slider {
+  border: 1px solid transparent;
+  background: #AEB3CB;
+}
+
+input:checked:hover+.slider {
+  border: 1px solid transparent;
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  overflow-x: hidden;
+}
+
+input:checked+.slider:before {
+  transform: translateX(1.4em);
+  background-color: #fff;
+}
