@@ -28,6 +28,7 @@ const BigCardComponent = (props: IBigCard) => {
     const [subs, setSubs] = useState("FOLLOWERS");
 
 
+
     useEffect(() => {
 
 

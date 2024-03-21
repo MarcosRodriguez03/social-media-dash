@@ -10,6 +10,7 @@ const HomePageComponent = () => {
     const [bigText, setBigText] = useState("text-black")
     const [greyText, setGreyText] = useState("text-[#636675]")
     const [greyText2, setGreyText2] = useState("text-[#636675]")
+    const [line, setLine] = useState("border-black mt-[25px]")
 
 
     const handleToggle = () => {
@@ -24,6 +25,8 @@ const HomePageComponent = () => {
             setBigText("text-black")
             setGreyText("text-[#636675]")
             setGreyText2("text-[#636675]")
+            setLine("border-black mt-[25px]")
+            setLine("border-[#636675] mt-[25px]")
 
 
             document.body.style.backgroundColor = "#FFFFFF";
@@ -36,6 +39,7 @@ const HomePageComponent = () => {
             setBigText("text-white")
             setGreyText("text-white")
             setGreyText2("text-[#909ABD]")
+            setLine("border-[#909ABD] mt-[25px]")
 
         }
 
@@ -57,7 +61,7 @@ const HomePageComponent = () => {
                     <div className='interFontBold'>
                         <h1 className={`text-xl lg:text-3xl ${bigText}`} >Social Media Dashboard</h1>
                         <p className={`text-[12px] lg:text-sm ${greyText2}`}>Total Followers: 23,004</p>
-                        <hr className="lg:hidden block border-t-1 border-black mt-[25px] lg:mt-0" />
+                        <hr className={`lg:hidden block border-t-1  lg:mt-0 ${line}`} />
                     </div>
 
                     <label className="inline-flex items-center cursor-pointer lg:flex justify-between lg:justify-end pt-[16px]">
